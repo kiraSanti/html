@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo HTML 🤘</title>
+
+    <style>
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 50%;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        input:placeholder-shown {
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+        }
+
+        #rem {
+            color: royalblue;
+        }
+
+        #tube {
+            color: red;
+        }
+
+        #pc {
+            color: black;
+        }
+
+        .box {
+            background-color: lightblue;
+            color: darkblue;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .important {
+            font-weight: bold;
+            color: tomato;
+        }
+
+        #miEncabezado {
+            background-color: darkslategrey;
+            color: wheat;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Headers/Encabezados-->
+    <div id="headers">
+        <h1 style="color: rgb(64, 33, 204);" title="Headers/Encabezados"> HEADERS 🤘</h1>
+        <h1> H1 title 🤘</h1>
+        <h2> H2 title 🤘</h2>
+        <h3> H3 title 🤘</h3>
+        <h4> H4 title 🤘</h4>
+        <h5> H5 title 🤘</h5>
+        <h6> H6 title 🤘</h6>
+    </div>
+    <!--from here it does not really make any difference to put h7/h8/h9 etc-->
+    <!--but at the end of the day: the sizes are customized with CSS-->
+    <h7> H7 title 🤘</h7>
+    <h8> H8 title 🤘</h8>
+    <h9> H9 title 🤘</h9><br><br>
+    <hr>
+
+    <!--Parrafos-->
+    <div id="parrafos">
+        <h1 style="color: crimson;" title="Parrafos"> PARRAFOS 😎</h1>
+        <p> 😎 <b>Puedo poner un parrafo como este!</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Reprehenderit accusamus obcaecati ipsam omnis pariatur molestias totam officiis laudantium. Ipsam ex omnis
+            debitis recusandae optio consectetur laudantium officiis consequuntur quod laboriosam?</p>
+
+        <p> 😎 <b>Este seria mi segundo parrafo...</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+            laudantium ad, beatae natus rerum assumenda voluptatem quae quia fuga, error nemo sunt impedit provident
+            voluptatum. Odit deleniti sapiente perferendis pariatur!</p>
+
+        <p title="parrafo"> 😎 <b>... y este el tercero</b>, que se di-<br>vide por que use la etiqueta
+            <b>"&#60br&#62"</b>
+            que <strong> <u>no</u> </strong> tiene Closing Tag (Etiqueta de cierre). Si bien tanto el
+            "<strong><u>no</u></strong>" anterior -y este- y las <b>primeras palabras de estos 3 parrafos</b> estan
+            ambos en
+            negrita, la diferencia no solo es que el "<strong><u>no</u></strong>" esta en negrita por que usamos el tag
+            <b>"&#60strong&#62"</b> y en las primeras palabras el tag <b>"&#60b&#62"</b>, sino que, al usar el tag
+            <b>"&#60strong&#62"</b> ademas de poner el contenido en negrita... le estamos dando una <i> importancia
+                semantica <b>mayor </b></i> <br><br>Lo mismo ocurre con los tags <i>"&#60i&#62"</i> y
+            <em>"&#60em&#62"</em>:
+            el tag <i>"&#60i&#62"</i> simplemente nos coloca el contenido italizado, mientras que el tag
+            <i>"&#60em&#62"</i>
+            ademas le da una <i> importancia semantica <b>mayor </b></i> <br><br> La etiqueta
+            <small>"&#60small&#62"</small>
+            nos pone el contenido un poco mas pequeno <br><br> Luego tenemos el tag <mark>"&#60mark&#62"</mark> que
+            resalta
+            el contenido como se ve <br><br> Luego esta el tag <del>"&#60del&#62"</del> que tacha el contenido como se
+            ve<br><br> Las etiquetas <u>"&#60u&#62"</u> e <ins>"&#60ins&#62"</ins> ambas subrayan el contenido, solo que
+            la
+            primera se usa para cuando hay misspellings y la segunda para cuando se ha insertado el contenido <br><br>
+            Para
+            crear sub-indices usamos el tag <sub>"&#60sub&#62"</sub> que pone el contenido un poco abajo como se ve
+            <br><br>
+            Y tambien podemos crear super-indices usando el tag <sup>"&#60sup&#62"</sup> que pone el contenido un poco
+            arriba como se ve
+        </p><br>
+    </div>
+    <hr>
+
+    <!--Links/enlaces-->
+    <!--You have to declare the 'href' attribute and assing a value (url) to it-->
+    <div id="enlaces">
+        <h1 style="color: rgb(0, 165, 187);" title="Enlaces"> ENLACES 🔗</h1>
+
+        <a href="https://www.youtube.com/watch?v=5KJDlLvjoHQ" target="_blank">
+            <i>Este es un enlace 🎶😉</i> </a><br>
+
+        <a href="contactMe.html" target="_blank">
+            <i>Contact Me📞📞📞</i></a><br>
+
+        <a href="mailto:casabarra228@gmail.com" target="_blank">
+            <i>Send Email 📧</i></a><br><br><br>
+        <hr>
+    </div>
+
+    <!--Images!-->
+    <!-- 'img' tag does not have a closing tag -->
+    <!-- You have to declare the 'src' attribute and assign a value (file location of the image) to it-->
+    <!-- 'alt' attribute sets an alternative text to be displayed when the image cannot be loaded -->
+    <div id="images">
+        <h1 style="color: navy;" title="Images"> IMAGES 🌄</h1>
+        <h2 style="color: steelblue;"><b><i>Local (</i><i id="pc">PC</i><i>)</i></b></h2>
+
+        <img src="./assets/images/kiritaHermosa.jpg" alt="Kirita" title="Kirita Hermosa" width="150">
+        <img src="./assets/images/habana.jpg" alt="La Habana, Cuba" title="La Habana, Cuba" width="150">
+        <img src="./assets/images/pregnant.png" alt="Pregnant Woman" title="Pregnant Woman" width="210">
+        <img src="./assets/images/rumisGone.gif" alt="Captain Jack Sparrow Gif" title="Captain Jack Sparrow Gif"
+            width="200"><br><br>
+
+        <!-- Using <figure> and <figcaption> tags to group an image with its title -->
+        <figure style="margin: 0px;">
+            <figcaption>Imagen de Arthur Morgan</figcaption>
+            <img src="./assets/images/arthurMorgan.jpg" alt="Arthur Morgan" title="Arthur Morgan" width="200">
+        </figure><br>
+        <hr style="max-width: 280px; margin: 0px;">
+
+        <h2><b><i id="rem">Remote</i> <i id="you">(You</i><i id="tube">Tube</i><i>)</i></b></h2>
+
+        <a href="https://www.youtube.com/watch?v=I4DjHHVHWAE" target="_blank"><img
+                src="https://i1.sndcdn.com/artworks-IQHjV5fiSH8e-0-t500x500.jpg" alt="Rich Flex" title="Rich Flex"
+                width="150px" />
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=Kp7eSUU9oy8" target="_blank"><img
+                src="https://upload.wikimedia.org/wikipedia/en/1/10/Childish_Gambino_-_Awaken%2C_My_Love%21.png"
+                alt="Redbone" title="Redbone" width="150px">
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=JOKn33-q4Ao" target="_blank"><img
+                src="https://media.pitchfork.com/photos/5ee90b8b7bb7acb328d5683a/1:1/w_450%2Cc_limit/Maggot%2520Brain_Funkadelic.jpg"
+                alt="Maggot Brain" title="Maggot Brain" width="150px">
+        </a><br><br>
+        <hr style="max-width: 280px; margin: 0px;">
+
+        <h2 style="color: steelblue;"><i>Background images</i></h2>
+
+        <p>Casi todos los elementos HTML pueden tener una imagen de fondo. Para añadir una imagen de fondo se usa la
+            propiedad de CSS <span style="color: steelblue;"><b><i>'background-image'</i></b></span></p>
+
+        <img src="./assets/images/divBackgound.png" alt="divBackgound code snippet" title="divBackgound code snippet"
+            width="500px"><br><br>
+
+        <div style="background-image: url(assets/images/ac3.jpg); background-size: cover;">
+            <h3>Encabezado <i>&#60h3&#62</i></b></h3>
+            <p style="text-align: justify;">Este es un<b><i>&#60p&#62</i></b> dentro de un <b><i>&#60div&#62</i></b> con
+                una
+                imagen de fondo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quas tempore odio.
+                Atque
+                ipsa, saepe mollitia dolores reprehenderit ea necessitatibus quisquam facilis neque omnis illum
+                laboriosam
+                quidem temporibus sint non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quos
+                similique error aliquam suscipit neque. Laborum, quisquam iure! Ipsam laboriosam rerum laudantium cumque
+                perspiciatis accusantium quaerat eligendi debitis architecto fugit. Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Ad odio quis obcaecati eius repellat quas quo vitae suscipit tempore facere incidunt
+                officia quibusdam distinctio illum ducimus autem, ratione mollitia ut.Laborum, quisquam iure! Ipsam
+                laboriosam rerum laudantium cumque perspiciatis accusantium quaerat eligendi debitis architecto fugit.
+                Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ad odio quis obcaecati eius repellat quas quo vitae
+                suscipit tempore facere incidunt officia quibusdam distinctio illum ducimus autem, ratione mollitia
+                ut.Laborum, quisquam iure! Ipsam laboriosam rerum laudantium cumque perspiciatis accusantium quaerat
+                eligendi debitis architecto fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad odio quis
+                obcaecati eius repellat quas quo vitae suscipit tempore facere incidunt officia quibusdam distinctio
+                illum
+                ducimus autem, ratione mollitia ut.</p>
+        </div>
+
+        <hr style="max-width: 550px; margin: 0px;">
+        <h2 style="color: tomato;"><b><i>Now let's use the "&#60picture&#62" tag!</i></b></h2>
+
+        <!-- Este tag contiene elementos <source> y cada uno de estos hace referencia a una imagen deiferente, y el navegador escoge una de ellas según la pantalla o el dispositivo. En los atributos de los <source> se describe cuándo se tiene que usar cada imagen -->
+        <!-- Es importante poner in <img> como último hijo, por si el navegador no soporta el <picture> o no encuentra el source adecuado, entonces cargará el <img> -->
+        <!-- Cuándo utilizarlo? -->
+        <!-- Normalmente se usa en 2 casos:
+    Ancho de banda: Para dispositivos con pantalas pequeñas en los que no hace falta cargar imágenes muy grandes.
+    Soporte de formatos: Algunos navegadores no soportan todos los formatos de iamgen, usando <picture> el navegador cogerá la primera iamgen del formato que reconozca.
+    -->
+        <picture>
+
+            <source media="(min-width: 500px)" srcset="assets/images/car.jpg">
+            <source media="(min-width: 300px)" srcset="assets/images/women.jpg">
+            <img src="assets/images/sunset.jpg" alt="sunset">
+
+        </picture>
+    </div><br><br><br>
+    <hr>
+
+    <!--AUDIO-->
+    <div id="audio">
+        <h1 style="color: violet;" title="AUDIO">AUDIO 🔊</h1>
+        <h2 style="color: steelblue;"><b><i>Local (</i><i id="pc">PC</i><i>)</i></b></h2>
+
+        <h3 style="color: royalblue; margin: 20px;"><b><i>Pirates 🏴‍☠️</i></b></h3>
+        <audio src="assets/audio/pirates.mp3" controls autoplay muted></audio>
+
+        <h3 style="color: orangered; margin: 20px;"><b><i>Nicky y Coscu 👨🏻‍🦲</i></b></h3>
+        <audio controls autoplay muted>
+            <source src="assets/audio/nickyCoscu.mp3" type="audio/mp3">
+        </audio>
+    </div><br><br>
+    <hr>
+
+    <!--VIDEO-->
+    <div id="video">
+        <h1 style="color: yellowgreen;" title="VIDEO">VIDEO 🎬</h1>
+        <h2 style="color: steelblue;"><b><i>Local (</i><i id="pc">PC</i><i>)</i></b></h2>
+
+        <video src="./assets/videos/elRemateAZ.mp4" width="250" autoplay muted loop>
+        </video>
+
+        <video controls width="250" autoplay muted loop>
+            <source src="./assets/videos/realityFlowXAl2.mp4" type="video/mp4">
+        </video>
+
+        <!--Now let's make it more compatible (some browsers do not support .mp4 format files)-->
+        <video controls width="250" autoplay muted loop>
+            <source src="./assets/videos/miReligionAZ.mp4" type="video/mp4">
+            <source src="./assets/videos/miReligionAZ.ogv" type="video/mp4">
+        </video>
+
+        <video width="250" autoplay muted loop>
+            <source src="./assets/videos/bequerKaseO.mp4" type="video/mp4">
+            <source src="assets/videos/bequerKaseO.ogv" type="video/ogv">
+        </video><br><br><br>
+        <hr style="max-width: 550px; margin: 0px;">
+
+        <h2><b><i id="rem">Remote</i> <i id="you">(You</i><i id="tube">Tube</i><i>)</i></b></h2>
+        <iframe width="450" height="253.13" src="https://www.youtube.com/embed/F3j8MZXEmkg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div><br><br><br>
+    <hr>
+
+    <!--PARRAFOS CON LINE BREAK AUTOMATICO-->
+    <!-- You should use '<pre>' tag which works as the '<p>' tag but you won't need to put 'br' tag every time to make a line break: line breaks and spaces on the html document are going to be parsed and displayed on the browser-->
+    <div id="pre">
+        <h1 style="color: rgb(0, 128, 53);" title="Parrafos con break line automatico"> PARRAFOS CON LINE BREAK
+            AUTOMATICO
+            📜 </h1>
+        <h3 style="color: rgb(0, 128, 53);">Util para: Poemas, Lyrics, Quotes, etc...</h3>
+
+        <pre>
+            Voy por el infierno en chanclas
+           Hasta los perros creen en fantasmas
+         Si los gatos te conocen, no te espantan
+         Buenos días Vietnam, buenos días Vietnam
+        </pre>
+    </div><br>
+    <hr>
+
+    <!-- TABLAS-->
+    <div id="tablas">
+        <h1 style="color: rgb(255, 153, 0);" title="Tablas"> TABLAS <del>🛹</del></h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Owner</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>Kira</td>
+                <td rowspan="2">Blanco, cafe, gris</td>
+                <td colspan="2">Fabian y Cristian 324 6777816</td>
+            </tr>
+            <tr>
+                <td>Jake</td>
+                <td>Norma y Santi</td>
+                <td>3132411361</td>
+            </tr>
+            <tr>
+                <td>Luna</td>
+                <td>Negra</td>
+                <td>Diana</td>
+                <td>320 8971294</td>
+            </tr>
+        </table>
+    </div><br><br>
+    <hr>
+
+    <!--LISTAS-->
+    <div id="listas">
+        <h1 style="color: rgb(43, 255, 0);" title="Listas"> LISTAS ✔️</h1>
+        <h2 style="color: rgb(78, 78, 255);">Unordered List...</h2>
+
+        <ul style="list-style-type: circle;">
+            <li>Guitar 🎸</li>
+            <li>Mouse 🖱️</li>
+            <li>Brain 🧠</li>
+        </ul>
+
+        <h2 style="color: rgb(0, 201, 201);">Ordered List...</h2>
+        <ol>
+            <li>Guitar 🎸</li>
+            <li>Mouse 🖱️</li>
+            <li>Brain 🧠</li>
+        </ol>
+
+        <h2 style="color: tomato;">List inside List...</h2>
+        <ul>
+            <li>Guitar 🎸
+                <ul>
+                    <li>Guitar 🎸</li>
+                    <li>Mouse 🖱️</li>
+                    <li>Brain 🧠</li>
+                </ul>
+            </li><br>
+            <hr style="max-width: 150px; margin: 0px;">
+            <li>Mouse 🖱️
+                <ul>
+                    <li>Guitar 🎸</li>
+                    <li>Mouse 🖱️</li>
+                    <li>Brain 🧠</li>
+                </ul>
+            </li><br>
+            <hr style="max-width: 150px; margin: 0px;">
+            <li>Brain 🧠
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=bgZrHpL8jZ4&list=RDbgZrHpL8jZ4&start_radio=1"
+                            target="_blank"> Guitar 🎸 </a></li>
+                    <li><a href="https://www.amazon.com/%E3%80%90Upgrade%E3%80%91-Wireless-Rechargeable-Portable-Adjustable/dp/B088NDL2G1/ref=sr_1_3?keywords=mouse%2Binalambrico%2Brecargable&qid=1674094009&sprefix=mouse%2Bina%2Caps%2C155&sr=8-3&th=1"
+                            target="_blank"> Mouse 🖱️ </a></li>
+                    <li><a href="https://platzi.com/home" target="_blank"> Brain 🧠 </a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><br>
+    <hr>
+
+    <!--FORMS!!!-->
+    <div id="forms">
+        <h1 style="color: rgb(255, 0, 34);" title="FORMS!">FORMS! 🏎️</h1>
+        <h3 style="color: cadetblue;">Hay varios tipos de <i>Input...</i></h3>
+        <hr style="max-width:250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><i>Text</i></h2>
+        <form>
+            <fieldset style="max-width: 200px;">
+                <legend>Form 1</legend>
+
+                <label for="name" style="color: cornflowerblue;"><b>Nombre</b></label>
+                <input type="text" name="name" id="name" placeholder="Nombre" value="Peter" disabled><br><br>
+
+                <label for="apellido" style="color: coral;"> <b>Apellido</b></label>
+                <input type="text" name="lastname" id="apellido" placeholder="Apellido" value="Parker" readonly><br><br>
+
+                <label for="address" style="color: crimson;"> <b>Direccion</b></label>
+                <input type="text" name="address" id="address" placeholder="Direccion" required><br><br>
+
+                <label for="email" style="color: springgreen;"><b>Correo electronico</b></label>
+                <input type="email" name="email" id="email" placeholder="Correo electronico" required><br><br>
+
+                <label for="password" style="color: blueviolet;"><b>Password</b></label>
+                <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+
+                <label for="country" style="color: lightseagreen;"><b>Country Code</b></label><br>
+                <input type="text" name="country" id="country" pattern="[A-Za-z]{3}"
+                    placeholder="Country Code"><br><br><br>
+
+                <input type="submit" value="submit"> Submit button creado con el tag
+                <mark><i><b>'input'</b></i></mark><br><br>
+
+                <button type="submit">submit</button> Submit button creado con el tag
+                <mark><i><b>'button'</b></i></mark>
+
+            </fieldset>
+        </form><br><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><i>Radiobutton</i></h2>
+        <form>
+            <fieldset style="max-width: 200px;">
+                <legend>Form 2</legend>
+
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Hombre</label><br>
+
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Mujer</label><br>
+
+                <input type="radio" name="gender" id="other" value="other" checked>
+                <label for="other">Otro</label><br><br>
+
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><i>Checkbox</i></h2>
+        <h4 style="color: lightseagreen;"><i>Qué mascota tienes?</i></h4>
+        <form>
+            <label for="cat">Gato</label>
+            <input type="checkbox" name="cat" id="cat" value="cat"><br>
+
+            <label for="dog">Perro</label>
+            <input type="checkbox" name="dog" id="dog" value="dog"><br>
+
+            <label for="otro">Otro</label>
+            <input type="checkbox" name="otro" id="otro" value="other"><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><i>Selector</i></h2>
+        <form>
+            <label for="color">Elige un color</label>
+            <select name="color" id="color">
+
+                <option value="yellow">amarillo</option>
+                <option value="blue">azul</option>
+                <option value="red">rojo</option>
+                <option value="" selected>---</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><i>Text Area</i></h2>
+        <form>
+            <label for="tellus" style="color: brown;"><b><i>Tell us something</i></b></label><br>
+            <textarea name="tellus" id="tellus" cols="30" rows="10"></textarea>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><i>Button</i></h2>
+        <form>
+            <label for="Nickname">Nickname</label>
+            <input type="text" name="Nickname" id="Nickname" value="tottoy" size="10" minlength="6" maxlength="10"
+                required><br><br>
+
+            <button type="button" onclick="alert('Hola');">Boton type 'button'</button><br>
+            <button type="reset">Boton type 'reset'</button><br>
+            <button type="submit">Boton type 'submit'</button><br>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><i>Datalist</i></h2>
+        <form>
+            <input list="food" placeholder="qué va ja' querel?">
+            <datalist id="food">
+                <option>🍕</option>
+                <option>🍔</option>
+                <option>🌭</option>
+
+            </datalist>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><i>Color</i></h2>
+        <form>
+            <label for="colors" style="color: darkolivegreen;"><b><i>Pick a color 🎨</i></b></label><br><br>
+            <input type="color" name="colors" id="colors">
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><i>File</i></h2>
+        <form>
+            <label for="file"></label>
+            <input type="file" name="file" id="file" multiple
+                style="color: yellowgreen; font-style: italic; font-weight: 600;">
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><b><i>Time</i></b></h2>
+        <form>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br><br>
+
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time"><br><br>
+
+            <label for="datetime">Date and Time</label>
+            <input type="datetime-local" name="datetime" id="datetime"><br><br>
+
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month"><br><br>
+
+            <label for="week">Week</label>
+            <input type="week" name="week" id="week"><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><b><i>Number</i></b></h2>
+        <form>
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number" min="0" max="12"><br><br>
+
+            <label for="step">Stepped Number</label>
+            <input type="number" name="step" id="step" min="0" max="100" step="5"><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><b><i>Range</i></b></h2>
+        <form>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" min="0" max="4" value="3">
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><b><i>Search</i></b></h2>
+        <form>
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search">
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: coral;"><b><i>Tel</i></b></h2>
+        <form>
+            <label for="tel">Tel</label>
+            <input type="tel" name="tel" id="tel">
+
+        </form><br><br>
+        <hr style="max-width: 250px; margin: 0px;">
+
+        <h2 style="color: cornflowerblue;"><b><i>URL</i></b></h2>
+        <form>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+
+        </form>
+    </div><br><br>
+    <hr>
+
+    <!--CITAS Y MENCIONES (QUOTES AND REFERENCES)-->
+    <div id="quotes">
+        <h1 style="color: royalblue;" title="CITAS Y MENCIONES">CITAS Y MENCIONES</h1>
+
+        <p>Use <b><i>"&#60q&#62"</i></b> tag for short quotes. It concatenates "" at the beginning and at then end of
+            the
+            quote itself as shown on the following example...</p>
+
+        <p><b>Kiko Palomares dijo en un video: </b><q style="color: tomato;"><b><i>No he programado nada para enamorar,
+                        pero
+                        todo lo que programo, enamora.</i></b></q></p><br>
+        <hr style="max-width: 400px; margin: 0px;">
+
+        <p>Use <b><i>"&#60blockquote&#62"</i></b> tag for large quotes...</p>
+        <h3>Qué es la programación?</h3>
+        <blockquote cite="https://es.wikipedia.org/wiki/Programaci%C3%B3n" style="text-align: justify;">La programación
+            es
+            el proceso de crear un conjunto de instrucciones que le dicen a una computadora como realizar algún tipo de
+            tarea. Pero no solo la acción de escribir un código para que la computadora o el software lo ejecute.
+            Incluye,
+            además, todas las tareas necesarias para que el código funcione correctamente y cumpla el objetivo para el
+            cual
+            se escribió.</blockquote>
+        <h5 style="color: grey; margin: 40px;">Fuente: https://es.wikipedia.org/wiki/Programaci%C3%B3n</h5>
+        <hr style="max-width: 400px; margin: 0px;"><br>
+
+        <p>Use <b><i>"&#60abbr&#62"</i></b> tag to indicate an abbreviation</p>
+        <p style="color: rgb(255, 143, 45);">La programación <abbr title="Programación Orientada a Objetos">OPP</abbr>
+            es
+            muy útil</p>
+        <hr style="max-width: 400px; margin: 0px;"><br>
+
+        <p>Use <b><i>"&#60cite&#62"</i></b> tag to indicate the title of something (book, movie, videogame, song,
+            etc...).
+            It will put the content between the <b><i>"&#60cite&#62"</i></b> tag in <i>italics</i> but it will
+            <b>not</b>
+            add the "" symbols.
+        </p>
+        <p style="color: seagreen;"><cite>"Chappie"</cite> es una de mis pelis favoritas</p>
+        <hr style="max-width: 400px; margin: 0px;"><br><br>
+
+        <p>Use <b><i>"&#60bdo&#62"</i></b> tag to change the direction of the content as shown...</p>
+        <p style="color: slateblue;"><bdo dir="rtl">Hola mundo!</bdo></p>
+        <hr style="max-width: 400px; margin: 0px;"><br><br>
+
+        <p>Use <b><i>"&#60address&#62"</i></b> tag to put some contact info <i>italized</i></p>
+        <address style="color: crimson;">
+            Santiago Barrios <br>
+            Visita mi web <br>
+            Email
+
+        </address>
+    </div><br><br>
+    <hr>
+
+    <!-- IN-LINE/BLOCK DISPLAY -->
+    <div id="blockinline">
+        <h1>DISPLAY EN <span style="color: orangered;" title="IN-LINE/BLOCK DISPLAY">BLOQUE</span> Y EN <span
+                style="color: crimson;">LÍNEA</span></h1>
+        <p>Todos los elementos HTML tienen un valor de visualización predeterminado según el tipo de elemento que sea.
+        </p>
+
+        <h2 style="color: orangered;">En bloque 🧱</h2>
+        <p style="text-align: justify;">Un elemento en bloque siempre comienza en una nueva línea y ocupa todo el ancho
+            disponible (se extiende hacia la
+            izquierda y hacia la derecha tanto como sea posible).</p>
+
+        <ul>
+            <li>Ejemplos
+                <ul style="list-style-type: circle;">
+                    <li><b>&#60address&#62</b></li>
+                    <li><b>&#60article&#62</b></li>
+                    <li><b>&#60aside&#62</b></li>
+                    <li><b>&#60blockquote&#62</b></li>
+                    <li><b>&#60canvas&#62</b></li>
+                    <li><b>&#60dd&#62</b></li>
+                    <li><b>&#60div&#62</b></li>
+                    <li><b>&#60dl&#62</b></li>
+                    <li><b>&#60dt&#62</b></li>
+                    <li><b>&#60fieldset&#62</b></li>
+                    <li><b>&#60figcaption&#62</b></li>
+                    <li><b>&#60figure&#62</b></li>
+                    <li><b>&#60footer&#62</b></li>
+                    <li><b>&#60form&#62</b></li>
+                    <li><b>&#60h1&#62 - &#60h6&#62</b></li>
+                    <li><b>&#60header&#62</b></li>
+                    <li><b>&#60hr&#62</b></li>
+                    <li><b>&#60li&#62</b></li>
+                    <li><b>&#60main&#62</b></li>
+                    <li><b>&#60nav&#62</b></li>
+                    <li><b>&#60noscript&#62</b></li>
+                    <li><b>&#60ol&#62</b></li>
+                    <li><b>&#60p&#62</b></li>
+                    <li><b>&#60pre&#62</b></li>
+                    <li><b>&#60section&#62</b></li>
+                    <li><b>&#60table&#62</b></li>
+                    <li><b>&#60tfoot&#62</b></li>
+                    <li><b>&#60ul&#62</b></li>
+                    <li><b>&#60video&#62</b></li>
+                </ul>
+            </li><br>
+        </ul>
+
+        <h2 style="color:crimson ;">En línea ─ </h2>
+        <p style="text-align: justify;">Un elemento en línea no comienza en una línea nueva, y solo ocupa el ancho que
+            ocupa
+            su contenido.
+        </p>
+
+        <ul>
+            <li>Ejemplos
+                <ul>
+                    <li><b>&#60a&#62</b></li>
+                    <li><b>&#60abbr&#62</b></li>
+                    <li><b>&#60acronym&#62</b></li>
+                    <li><b>&#60b&#62</b></li>
+                    <li><b>&#60bdo&#62</b></li>
+                    <li><b>&#60big&#62</b></li>
+                    <li><b>&#60br&#62</b></li>
+                    <li><b>&#60button&#62</b></li>
+                    <li><b>&#60cite&#62</b></li>
+                    <li><b>&#60code&#62</b></li>
+                    <li><b>&#60dfn&#62</b></li>
+                    <li><b>&#60em&#62</b></li>
+                    <li><b>&#60i&#62</b></li>
+                    <li><b>&#60img&#62</b></li>
+                    <li><b>&#60input&#62</b></li>
+                    <li><b>&#60kbd&#62</b></li>
+                    <li><b>&#60label&#62</b></li>
+                    <li><b>&#60map&#62</b></li>
+                    <li><b>&#60object&#62</b></li>
+                    <li><b>&#60output&#62</b></li>
+                    <li><b>&#60q&#62</b></li>
+                    <li><b>&#60samp&#62</b></li>
+                    <li><b>&#60script&#62</b></li>
+                    <li><b>&#60select&#62</b></li>
+                    <li><b>&#60small&#62</b></li>
+                    <li><b>&#60span&#62</b></li>
+                    <li><b>&#60strong&#62</b></li>
+                    <li><b>&#60sub&#62</b></li>
+                    <li><b>&#60sup&#62</b></li>
+                    <li><b>&#60textarea&#62</b></li>
+                    <li><b>&#60time&#62</b></li>
+                    <li><b>&#60tt&#62</b></li>
+                    <li><b>&#60var&#62</b></li>
+                </ul>
+            </li>
+        </ul>
+    </div><br><br>
+    <hr>
+
+    <div id="divtag">
+        <h1 style="color: rgb(78, 78, 255);" title="&#60div&#62 tag">LA ETIQUETA &#60div&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: rgb(78, 78, 255);"><b>&#60div&#62</b></span> se
+            usa
+            a menudo como contenedor para otros elementos HTML.
+            La etiqueta <span style="color: rgb(78, 78, 255);"><b>&#60div&#62</b></span> no tiene atributos
+            obligatorios,
+            pero <b><i>style, class</i></b> y <b><i>id</i></b> se suelen usar.
+        </p>
+
+
+        <p>La etiqueta <span style="color: rgb(78, 78, 255);"><b>&#60div&#62</b></span> es de tipo <span
+                style="color: orangered;"><b><i>in-block</i></b></span></p>
+
+        <img src="./assets/images/div.png" alt="&#60div&#62 code snippet" title="&#60div&#62 code snippet"
+            width="650px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=7827s"
+                target="_blank" style="color: rgb(117, 117, 255);">
+                https://www.youtube.com/watch?v=CGV9CuIUtwk&t=7827s</a>
+        </h5><br>
+
+        <div style="background-color: black; color: white; padding: 20px;">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nuc ut lacus mi. Mauris sed gravida sem, vitae
+                sodales quam. Vestibulum consequat cursus sagittis</p>
+
+        </div>
+    </div><br><br>
+    <hr>
+
+    <div id="spantag">
+        <h1 style="color: rgb(72, 161, 60);" title="&#60span&#62 tag">LA ETIQUETA &#60span&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: rgb(72, 161, 60);"><b>&#60span&#62</b></span> a
+            menudo se usa como contenedor para textos.
+            La etiqueta <span style="color: rgb(72, 161, 60);"><b>&#60span&#62</b></span> no tiene atributos
+            obligatorios,
+            pero <b><i>style, class</i></b> y <b><i>id</i></b> se suelen usar.
+        </p>
+
+        <p>La etiqueta <span style="color: rgb(72, 161, 60);"><b>&#60span&#62</b></span> es de tipo <span
+                style="color: crimson;"><b><i>in-line</i></b></span></p>
+
+        <img src="./assets/images/span.png" alt="&#60span&#62 code snippet" title="&#60span&#62 code snippet"
+            width="500px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=7883s"
+                target="_blank" style="color: rgb(67, 116, 61);">
+                https://www.youtube.com/watch?v=CGV9CuIUtwk&t=7883s</a>
+        </h5>
+    </div><br><br>
+    <hr>
+
+    <div id="linktag">
+        <h1 style="color: lightseagreen;" title="&#60link&#62 tag">LA ETIQUETA &#60link&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: lightseagreen;"><b>&#60link&#62</b></span> se
+            usa
+            para vincular hojas de estilo externas (archivos <i>CSS</i>) y se coloca dentro de la seccion
+            <b>&#60head&#62</b> del documento HTML.
+        </p>
+
+        <img src="./assets/images/link.png" alt="&#60link&#62 code snippet" title="&#60link&#62 code snippet"
+            width="500px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8046s"
+                target="_blank" style="color: lightseagreen;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8046s</a>
+        </h5>
+    </div><br><br>
+    <hr>
+
+    <div id="scripttag">
+        <h1 style="color: orange;" title="&#60script&#62 tag">LA ETIQUETA &#60script&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: orange;"><b>&#60script&#62</b></span> se usa
+            para
+            introducir código de JavaScript del lado del cliente.
+        </p>
+
+        <img src="./assets/images/script.png" alt="&#60script&#62 code snippet" title="&#60script&#62 code snippet"
+            width="500px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8225s"
+                target="_blank" style="color: orange;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8225s</a>
+        </h5>
+    </div><br><br>
+    <hr>
+
+    <div id="basetag">
+        <h1 style="color: deeppink;" title="&#60base&#62 tag">LA ETIQUETA &#60base&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: deeppink;"><b>&#60base&#62</b></span> define la
+            URL
+            base que se va a usar para todas las URLs relativas que haya en la página.
+        </p>
+
+        <img src="./assets/images/base.png" alt="&#60base&#62 code snippet" title="&#60base&#62 code snippet"
+            width="500px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8242s"
+                target="_blank" style="color: deeppink;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8242s</a>
+        </h5>
+    </div><br><br>
+    <hr>
+
+    <div id="kdbtag">
+        <h1 style="color: indianred;" title="&#60kbd&#62 tag">LA ETIQUETA &#60kbd&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: indianred;"><b>&#60kbd&#62</b></span> representa
+            una
+            entrada (<span style="color: indianred;"><b><i>input</i></b></span>) por parte del usuario, ya sea por
+            teclado o
+            comando de voz.
+        </p>
+
+        <img src="./assets/images/kbd.png" alt="&#60kbd&#62 code snippet" title="&#60kbd&#62 code snippet"
+            width="500px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8532s"
+                target="_blank" style="color: indianred;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8532s</a>
+        </h5><br>
+
+        <p>Guarda pulsando <kbd><span style="color: indianred;">Ctrl + S</span></kbd></p>
+    </div><br><br>
+    <hr>
+
+    <div id="samptag">
+        <h1 style="color: darkseagreen;" title="&#60samp&#62 tag">LA ETIQUETA &#60samp&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: darkseagreen;"><b>&#60samp&#62</b></span>
+            representa
+            un <b><i>output</i></b> de un programa.
+        </p>
+
+        <img src="./assets/images/samp.png" alt="&#60samp&#62 code snippet" title="&#60samp&#62 code snippet"
+            width="600px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8554s"
+                target="_blank" style="color: darkseagreen;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8554s</a>
+        </h5><br>
+
+        <p>Si introduces un valor mal, el programa devolverá: <samp style="color: darkseagreen;">Error!</samp> </p>
+    </div><br><br>
+    <hr>
+
+    <div id="codetag">
+        <h1 style="color: steelblue;" title="&#60code&#62 tag">LA ETIQUETA &#60code&#62</h1>
+
+        <p style="text-align: justify;">La etiqueta <span style="color: steelblue;"><b>&#60code&#62</b></span>
+            representa un
+            fragmento de <b><i>código</i></b>.
+        </p>
+
+        <img src="./assets/images/code.png" alt="&#60code&#62 code snippet" title="&#60code&#62 code snippet"
+            width="200px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8572s"
+                target="_blank" style="color: steelblue;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8572s</a>
+        </h5><br>
+
+        <code>
+        x = 5; <br>
+        y = 6; <br>
+        z = x + y;
+    </code>
+    </div><br><br>
+    <hr>
+
+    <div id="vartag">
+        <h1 style="color: hotpink;" title="&#60var&#62 tag">LA ETIQUETA &#60var&#62</h1>
+        <p style="text-align: justify;">La etiqueta <span style="color: hotpink;"><b>&#60var&#62</b></span> representa
+            una
+            <b><i>variable</i></b>, ya sea en el ámbito matemático o de programación.
+        </p>
+
+        <img src="./assets/images/var.png" alt="&#60var&#62 code snippet" title="&#60var&#62 code snippet"
+            width="500px">
+
+        <h5 style="color: grey; margin: 5px;">Fuente: <a href="https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8581s"
+                target="_blank" style="color: hotpink;"> https://www.youtube.com/watch?v=CGV9CuIUtwk&t=8581s</a>
+        </h5>
+
+        Einstein dijo: <var>E</var> = <var>mc</var><sup> 2</sup>
+    </div><br><br>
+    <hr>
+
+    <!-- LAYOUT METHODS -->
+    <div id="layout">
+        <h1 style="color: navy;" title="LAYOUT">LAYOUT</h1>
+        <p>El <span style="color: navy;"><b><i>Layout</i></b></span> es la forma en que se van a distribuir los
+            distintos
+            elementos en las distintas secciones de nuestra página web.</p>
+
+        <h2 style="color: navy;">Etiquetas Layout</h2>
+        <p><b>HTML</b> nos ofrece varias <span style="color: navy;"><b><i>etiquetas semánticas</i></b></span> que
+            definen
+            diferentes partes de una web, tales como...</p>
+
+        <ul>
+            <li><b>&#60header&#62</b> Define el encabezado del documento o de una sección</li>
+            <li><b>&#60nav&#62</b> Define un contenedor para enlaces de navegación</li>
+            <li><b>&#60section&#62</b> Define una sección del documento</li>
+            <li><b>&#60article&#62</b> Define un artículo</li>
+            <li><b>&#60aside&#62</b> Define contenido posicionado a un costado</li>
+            <li><b>&#60footer&#62</b> Define el pie de página del documento</li>
+            <li><b>&#60details&#62</b> Define detalles adicionales</li>
+            <li><b>&#60summary&#62</b> Define un encabezado para el <b>&#60details&#62</b></li>
+            <li><b>&#60figure&#62 - &#60figcaption&#62</b> Una imagen con su título se pueden agrupar dentro de
+                <b>&#60figure&#62</b>, poniendo el título en la etiqueta <b>&#60figcaption&#62</b>
+            </li>
+        </ul>
+
+        <img src="./assets/images/layout.png" alt="HTML layout" title="HTML layout" width="200px" style="margin: 20px;">
+
+        <h2 style="color: navy;">Métodos Layout</h2>
+        <p>Hay <span style="color: navy;"><b>5</b></span> formas de crear un sistema de <span
+                style="color: navy;"><b><i>Layout</i></b></span>, cada una tiene sus ventajas y desventajas.</p>
+
+        <ul>
+            <li>Tablas HTML (no recomendado)</li>
+            <li>CSS float</li>
+            <li>CSS framework</li>
+            <li style="color: navy;"><b>CSS Flexbox</b></li>
+            <li style="color: navy;"><b>CSS Grid</b></li>
+        </ul><br>
+
+        <h3>Tablas HTML</h3>
+        <p>El elemento <b><i>&#60table&#62</i> no</b> se creó para crear layouts. Así que <b>no</b> deberíamos usar este
+            método para crear un <span style="color: navy;"><b><i>Layout</i></b></span>.</p>
+        <hr style="max-width: 600px; margin: 0px;">
+
+        <h3>CSS Floats</h3>
+        <p>Es una forma muy común de maquetar toda la web usando la propiedad de <b><i>'CSS Float'</i></b>. Es fácil de
+            aprender, pero en
+            algunos casos puede que no sea tan <span style="color: coral;"><b>flexible</i></b> </span> como necesitamos.
+        </p>
+        <hr style="max-width: 600px; margin: 0px;">
+
+        <h3>CSS Framework</h3>
+        <p>Es la forma más rápida de crear un <span style="color: navy;"><b><i>Layout</i></b></span>. Un ejemplo de
+            framework es <span style="color: coral;"><b>Bootstrap</i></b> </span></p>
+        <hr style="max-width: 600px; margin: 0px;">
+
+        <h3>CSS Flexbox</h3>
+        <p>Es un nuevo sistema de <span style="color: navy ;"><b><i>Layout</i></b></span> disponible desde <b>CSS3</b>.
+            Se
+            va ajustando a las diferentes <span style="color: coral;"><b> resoluciones</b></span> de pantalla. No
+            funciona
+            con <b><i>Internet Explorer 10 :'c</i></b></p>
+        <hr style="max-width: 600px; margin: 0px;">
+
+        <h3>CSS Grid</h3>
+        <p>CSS Grid nos ofrece un <span style="color: navy ;"><b><i>Layout</i></b></span> basado en una rejilla con
+            <span style="color: coral ;"><b><i>Columnas (Columns)</i></b></span> y <span
+                style="color: coral ;"><b><i>Filas
+                        (Rows)</i></b></span>. Es fácil e intuitivo posicionar los elementos. No funciona con
+            <b><i>Internet
+                    Explorer</i></b> ni en <b><i>Edge 15</i></b> o <b><i>inferiores :'c</i></b>
+        </p>
+    </div><br><br>
+    <hr>
+
+    <div id="nbsp">
+        <h1 style="color: turquoise;">&amp;nbsp;</h1>
+        <p>Significa: <span style="color: rgb(48, 160, 149);"><b><i>Non Breakable Space</i></b></span>, útil para
+            representar múltiples espacios en blanco, y para hacer dos trozos de texto
+            <q><b><i>inseparables</i></b></q>, es
+            decir, por ejemplo: que no haya un salto de línea (<span style="color: rgb(48, 160, 149);"><b><i>Non
+                        Breakable
+                        Space</i></b></span>) entre <b>'10'</b> y <b>'km/h'</b>
+        <p>
+
+        <div>
+            10 km/h <br>
+            10&nbsp;km/h <br>
+            10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;km/h
+            <br>
+            <hr>
+        </div>
+    </div>
+
+    <div id="class">
+        <h1 style="color: darkseagreen;">EL ATRIBUTO CLASS!</h1>
+        <p>El atributo <span style="color: darkseagreen;"><b><i>'class'</i></b></span> de <b>HTML</b> se usa para
+            definir
+            <b>estilos</b> iguales para varios elementos al mismo tiempo. Es case sensitive.
+        </p>
+
+        <p>En <b>CSS</b> se usa el '<span style="font-size: larger;"><b>.</b></span>' seguido del nombre de la <span
+                style="color: darkseagreen;"><b><i>'class'</i></b></span> para selecccionar los elementos que
+            pertenezcan a
+            la misma.</p>
+
+        <p>Como podemos ver, los 3 <span><b><i>&#60div&#62</i></b></span> tienen el mismo <b>estilo</b> ya que todos son
+            de
+            la clase <span style="color: darkseagreen;"><b><i>'box'</i></b></span> </p>
+
+        <div class="box">
+            <h2>HTML</h2>
+            <p>Es un lenguaje de marcado usado para la web.</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>Es un lenguaje de estilos utilizado en web.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>Es el lenguaje de programación más importante en web.</p>
+        </div><br>
+
+        <h2 style="color: rgb(90, 104, 90);"><b><i>Usándolo in-line...</i></b></h2>
+        <p>Ambas palabras '<span class="important">importante</span>' van a estar de color <span
+                class="important">tomato</span> ya que tienen el atributo <span
+                style="color: darkseagreen;"><b><i>'class'</i></b></span> con el valor de <q><b><i>important</i></b></q>
+        </p>
+
+        <h1>Un encabezado <span class="important">importante</span></h1>
+        <p>Este es unt texto <span class="important">importante</span></p><br>
+    </div>
+    <hr>
+
+    <div id="id">
+        <h1 style="color: darkslategrey;">EL ATRIBUTO ID</h1>
+        <p>El atributo <span style="color: darkslategrey;"><b><i>'id'</i></b></span> especifica un identificador
+            <mark><b>único</b></mark> para un elemento <b>HTML</b>.
+        </p>
+
+        <p>El valor del <span style="color: darkslategrey;"><b><i>'id'</i></b></span> se usa en <b>CSS</b> y JavaScript
+            para
+            aplicar estilos o tareas sobre el elemento.</p>
+
+        <p>En <b>CSS</b> se usa el '<b>#</b>' para selecccionar los elementos por su <span
+                style="color: darkslategrey;"><b><i>'id'</i></b></span></p><br>
+
+        <p>El siguiente es un <b><i>&#60h1&#62</i></b> cuyo <span
+                style="color: darkslategrey;"><b><i>'id'</i></b></span> es
+            <q><b><i>miEncabezado</i></b></q>, estilizado con <b>CSS</b> como se muestra en la imagen
+        </p>
+
+        <img src="./assets/images/miEncabezado.png" alt="miEncabezado code snippet" title="miEncabezado code snippet"
+            width="300px">
+
+        <h1 id="miEncabezado">Mi encabezado</h1><br>
+    </div>
+    <hr>
+
+    <div id="classvsid">
+        <h1>Atributo <span style="color: darkseagreen;"> CLASS</span> vs Atributo <span
+                style="color: darkslategrey;">ID</span></h1>
+
+        <p>Un elemento <b>HTML</b> sólo puede tener un <span style="color: darkslategrey;"><b><i>'id'</i></b></span> y
+            este
+            debe ser <mark><b>único</b></mark> en todo el documento.</p>
+
+        <p>Un elemento <b>HTML</b> puede tener muchas <span style="color: darkseagreen;"><b><i>'class'</i></b></span> al
+            mismo tiempo.</p>
+
+        <img src="./assets/images/idVSclass.png" alt="id vs class code snippet" title="id vs class code snippet"
+            width="300px"><br>
+    </div>
+    <hr>
+
+    <div id="marcadores">
+        <h1 style="color: violet;">Marcadores con ID y enlaces</h1>
+        <p>Los <span style="color: violet;"><b>marcadores</b></span> en <b>HTML</b> sirven para saltar a una parte
+            específica de la página web.</p>
+
+        <p>Son útiles en webs muy largas.</p>
+
+        <p>Cuando clicas sobre el enlace, la página hace scroll a la localización del <span
+                style="color: violet;"><b>marcador</b></span>.</p>
+
+        <img src="./assets/images/marcadores.png" alt="marcadores code snippet" title="marcadores code snippet"
+            width="400px">
+
+        <ul>
+            <li>go to <a href="#headers" target="iframe">Headers</a></li>
+            <li>go to <a href="#parrafos" target="iframe">Parrafos</a></li>
+            <li>go to <a href="#enlaces" target="iframe">Enlaces</a></li>
+            <li>go to <a href="#images" target="iframe">Images</a></li>
+            <li>go to <a href="#audio" target="iframe">Audio</a></li>
+            <li>go to <a href="#video" target="iframe">Video</a></li>
+            <li>go to <a href="#pre" target="iframe">Pre</a></li>
+            <li>go to <a href="#tablas" target="iframe">Tablas</a></li>
+            <li>go to <a href="#listas" target="iframe">Listas</a></li>
+            <li>go to <a href="#forms" target="iframe">Forms</a></li>
+            <li>go to <a href="#quotes" target="iframe">Quotes</a></li>
+            <li>go to <a href="#blockinline" target="iframe">Block/In-line</a></li>
+            <li>go to <a href="#divtag" target="iframe">&#60div&#62 tag</a></li>
+            <li>go to <a href="#spantag" target="iframe">&#60span&#62 tag</a></li>
+            <li>go to <a href="#linktag" target="iframe">&#60link&#62 tag</a></li>
+            <li>go to <a href="#scripttag" target="iframe">&#60script&#62 tag</a></li>
+            <li>go to <a href="#basetag" target="iframe">&#60base&#62 tag</a></li>
+            <li>go to <a href="#kdbtag" target="iframe">&#60kbd&#62 tag</a></li>
+            <li>go to <a href="#samptag" target="iframe">&#60samp&#62 tag</a></li>
+            <li>go to <a href="#codetag" target="iframe">&#60code&#62 tag</a></li>
+            <li>go to <a href="#vartag" target="iframe">&#60var&#62 tag</a></li>
+            <li>go to <a href="#layout" target="iframe">Layout</a></li>
+            <li>go to <a href="#nbsp" target="iframe">&amp;nbsp;</a></li>
+            <li>go to <a href="#class" target="iframe">Atributo class</a></li>
+            <li>go to <a href="#id" target="iframe">Atributo id</a></li>
+            <li>go to <a href="#classvsid" target="iframe">class vs id</a></li>
+            <li>go to <a href="#marcadores" target="iframe">Marcadores</a></li>
+            <li>go to <a href="#iframeid" target="iframe">Iframe</a></li>
+        </ul>
+    </div><br>
+    <hr>
+
+    <div id="iframeid">
+        <h1 style="color: olive;">ELEMENTO IFRAME</h1>
+        <iframe src="index.html" width="350" height="350" name="iframe"></iframe>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>

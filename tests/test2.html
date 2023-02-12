@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*se aplicará a todos los párrafos en el documento, simplemente por ser eso: párrafos*/
+        p {
+            background-color: yellow;
+            text-align: justify;
+        }
+
+        /*se aplicará a los elementos que pertenezcan a la clase ".parrafo" (sin importar si son párrafos o no) */
+        .parrafo {
+            background-color: magenta;
+            text-align: justify;
+        }
+
+        /* se aplicará únicamente a los párafos que pertenezcan a la clase ".parrafo" */
+        p.parrafo {
+            background-color: cyan;
+            text-align: justify;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3><span style="color: rgb(58, 158, 113);">Diferencia entre
+            esto:</span>&nbsp;&nbsp;<code><span style="color: blueviolet;">p</span></code><br><br><span
+            style="color: rgb(58, 158, 113);"> esto:</span>&nbsp;&nbsp;<code>.classname</code>
+        <br><br><span style="color: rgb(58, 158, 113);">y
+            esto:</span>&nbsp;&nbsp;<code><span style="color: blueviolet;">p</span>.classname</code>
+    </h3><br>
+
+
+    <h4>Primer parrafo: <span style="color: blueviolet;"><code>p</code></span></h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus veniam ipsum modi dolorum,
+        illo temporibus vero doloribus in sunt assumenda nemo! Consequatur voluptatum accusamus earum corporis facilis
+        fugiat eos.</p>
+
+    <h4>Segundo parrafo: <code>classname</code></h4>
+    <!--Anque este párrafo pertece a la clase "parrafo", no saldrá pintado en MAGENTA como está declarado en la sección <style> que se encuentra en la sección <head> de este documento asi: '.parrafo', por que, en esa misma sección <style> tambien esta declarado esto: 'p.parrafo' ESPECIFICANDO que todos los <p> pertenecientes a la clase "parrafo" serán pintados de color CYAN -->
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet provident qui nostrum odit
+        nihil! Blanditiis consequuntur ducimus eveniet cupiditate aliquid animi minus obcaecati natus perferendis
+        inventore, deleniti earum nisi magni!</p>
+
+    <h4>Tercer parrafo: <code><span style="color: blueviolet;">p</span>.classname</code></h4>
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsam ea sequi quisquam, quod
+        obcaecati? Aliquam
+        fuga repellendus voluptates nulla velit excepturi deleniti repellat architecto, et corrupti illum rerum. Ipsa!
+    </p>
+
+    <h1 class="parrafo">Encabezado perteneciente a la clase <q><b>parrafo</b></q></h1><br>
+
+    <h4>Cuarto parrafo: Perteneciente a la clase <q><b>parrafo</b></q> y <q><b>big</b></q></h4>
+    <p class="parrafo big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quibusdam voluptates,
+        reiciendis amet iure doloribus. Quia illo cum saepe libero rerum delectus fugit esse eveniet nesciunt.
+        Dignissimos magnam placeat culpa!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>
